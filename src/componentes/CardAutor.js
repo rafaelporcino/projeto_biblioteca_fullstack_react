@@ -7,7 +7,7 @@ export default function CardAutor({autor}) {
 				<div className="w3-card">
 					<div className="w3-container w3-center">                   
                     <h5>{autor.id}</h5>                    
-                    <h5>{autor.nome}</h5>                    
+                    <h4>{autor.nome}</h4>                    
                 </div>
             </div>
         </div>

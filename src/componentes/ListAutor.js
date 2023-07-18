@@ -3,20 +3,20 @@ import CardAutor from "./CardAutor";
 import { useState } from "react";
 import API from '../service/API';
 
-export default function ListAutor() {
-    const [autor, setAutor ] = useState([]);
+export default function ListAutors() {
+    const [autors, setAutors ] = useState([]);
 
     useEffect(() => {
         API.get("/autor")
-            .then((response) => setAutor(response.data))
+            .then((response) => setAutors(response.data))
             .catch((err) => alert(err));
     }, [])
 
 
     return (
         <section class="w3-row w3-container w3-margin-top">
-        {  autor.map( prod => 
-                <CardAutor key={prod.id} autor={prod}></CardAutor>             
+        {  autors.map( aut => 
+                <CardAutor key={aut.id} autor={aut}></CardAutor>             
             )}
         </section>
     )

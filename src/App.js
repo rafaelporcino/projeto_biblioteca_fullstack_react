@@ -1,6 +1,13 @@
+
+
+
+
+
+
 import './App.css';
 import Carroussel from './componentes/Carroussel';
 //import ListProdutos from './componentes/ListProdutos';
+import ListUsuarios from './componentes/ListUsuarios';
 import ListAutor from './componentes/ListAutor';
 import ListLivro from './componentes/ListLivro';
 import ListEmprestimo from './componentes/ListEmprestimo';
@@ -15,6 +22,7 @@ function App() {
         <div className="w3-container w3-padding-16 w3-margin-top">
          <h1>Projeto Biblioteca</h1>
         </div>        
+        <ListUsuarios></ListUsuarios>    
         <ListAutor></ListAutor>                 
         <ListLivro></ListLivro>             
         <ListEmprestimo></ListEmprestimo>        
