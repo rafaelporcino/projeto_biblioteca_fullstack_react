@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getLivro } from '../service/api';
+import { getLivro } from '../service/API';
 
 class Livro extends Component {
   state = {
