@@ -7,6 +7,7 @@ export default function CardUsuario({usuario}) {
 				<div className="w3-card">
 					<div className="w3-container w3-center">
                     <img src={usuario.imagem} style={{width: "70%"}} />
+                    <h5>{usuario.id}</h5>                   
                     <h5>{usuario.nome}</h5>                   
                 </div>
             </div>

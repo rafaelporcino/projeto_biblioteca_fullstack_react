@@ -4,7 +4,7 @@ import { useState } from "react";
 import API from '../service/API';
 
 export default function ListEmprestimos() {
-    const [emprestimos, setEmprestimos ] = useState([]);
+    const [emprestimo, setEmprestimos ] = useState([]);
 
     useEffect(() => {
         API.get("/emprestimo")
@@ -15,8 +15,8 @@ export default function ListEmprestimos() {
 
     return (
         <section class="w3-row w3-container w3-margin-top">
-        {  emprestimos.map( prod => 
-                <CardEmprestimo key={prod.id} emprestimo={prod}></CardEmprestimo>
+        {  emprestimo.map( empr => 
+                <CardEmprestimo key={empr.id} emprestimo={empr}></CardEmprestimo>
             )}
         </section>
     )

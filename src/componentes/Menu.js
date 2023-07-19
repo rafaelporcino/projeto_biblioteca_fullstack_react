@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+//import ListUsuarios from './componentes/ListUsuarios';
 
 export default function Menu() {
     const [menuAtivo, setMenuAtivo] = useState(false);
@@ -16,18 +17,20 @@ export default function Menu() {
                     <i className="fa fa-home w3-xlarge"></i>			
                 </a>
                 <a href="/" className="w3-bar-item w3-button w3-hide-small">Home</a>
-                <a href="ListUsuario" className="w3-bar-item w3-button w3-hide-small">Usuário</a>
-                <a href="#" className="w3-bar-item w3-button w3-hide-small">Menu 2</a>
-                <a href="#" className="w3-bar-item w3-button w3-hide-small">Menu 3</a>
+                <a href="#" className="w3-bar-item w3-button w3-hide-small">Usuário</a>
+                <a href="#" className="w3-bar-item w3-button w3-hide-small">Autor</a>
+                <a href="#" className="w3-bar-item w3-button w3-hide-small">Livro</a>
+                <a href="#" className="w3-bar-item w3-button w3-hide-small">Emprestimo</a>
                 <a href="#" className="w3-bar-item w3-button w3-right">
                     <i className="fa fa-search w3-xlarge"></i>	
                 </a>	
             </nav>		
             <nav id="menu-mobile" className={"w3-bar-block w3-large w3-black w3-hide w3-hide-large w3-hide-medium"+ (menuAtivo ?" w3-show" :"")}>
             <a href="/" className="w3-bar-item w3-button">Home</a>
-            <a href="ListUsuario" className="w3-bar-item w3-button">Usuário</a>
-            <a href="#" className="w3-bar-item w3-button">Menu 2</a>
-            <a href="#" className="w3-bar-item w3-button">Menu 3</a>
+            <a href="#" className="w3-bar-item w3-button">Usuário</a>
+            <a href="#" className="w3-bar-item w3-button">Autor</a>
+            <a href="#" className="w3-bar-item w3-button">Livro</a>
+            <a href="#" className="w3-bar-item w3-button">Emprestimo</a>
             </nav>
 
         </header>
