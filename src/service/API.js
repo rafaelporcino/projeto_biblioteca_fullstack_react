@@ -1,19 +1,7 @@
-const API_BASE_URL = 'http://localhost:3000/api'; // Substitua pelo URL da sua API
+import axios from 'axios';
 
-export const getAutor = async (id) => {
-  const response = await fetch(`${API_BASE_URL}/autor/${id}`);
-  const data = await response.json();
-  return data;
-};
+const API = axios.create ({
+    baseURL:"http://localhost:3000/api"
+});
 
-export const getLivro = async (id) => {
-  const response = await fetch(`${API_BASE_URL}/livro/${id}`);
-  const data = await response.json();
-  return data;
-};
-
-export const getEmprestimo = async (id) => {
-  const response = await fetch(`${API_BASE_URL}/emprestimo/${id}`);
-  const data = await response.json();
-  return data;
-};
+export default API;
