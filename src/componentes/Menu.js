@@ -21,6 +21,9 @@ export default function Menu() {
                 <a href="#" className="w3-bar-item w3-button w3-hide-small">Autor</a>
                 <a href="#" className="w3-bar-item w3-button w3-hide-small">Livro</a>
                 <a href="#" className="w3-bar-item w3-button w3-hide-small">Emprestimo</a>
+                <a href="#" className="w3-bar-item w3-button w3-hide-small">Histórico</a>
+                <a href="#" className="w3-bar-item w3-button w3-hide-small"></a>
+                <a href="#" className="w3-bar-item w3-button w3-hide-small">Sair</a>
                 <a href="#" className="w3-bar-item w3-button w3-right">
                     <i className="fa fa-search w3-xlarge"></i>	
                 </a>	
@@ -31,6 +34,9 @@ export default function Menu() {
             <a href="#" className="w3-bar-item w3-button">Autor</a>
             <a href="#" className="w3-bar-item w3-button">Livro</a>
             <a href="#" className="w3-bar-item w3-button">Emprestimo</a>
+            <a href="#" className="w3-bar-item w3-button">Histórico</a>            
+            <a href="#" className="w3-bar-item w3-button"></a>     
+            <a href="#" className="w3-bar-item w3-button">Sair</a>            
             </nav>
 
         </header>

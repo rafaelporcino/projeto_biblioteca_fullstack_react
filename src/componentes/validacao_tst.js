@@ -12,7 +12,7 @@ const ApiData = () => {
   }, []);
 
   const fetchData = () => {
-    axios.get('https://api.example.com/data')
+    axios.get('http://localhost:3000/')
       .then(response => {
         setData(response.data);
       })
@@ -28,7 +28,7 @@ const ApiData = () => {
   };
 
   const handleSave = (id) => {
-    axios.put(`https://api.example.com/data/${id}`, { nome: editedName, obras: editedObras })
+    axios.put(`http://localhost:3000/data/${id}`, { nome: editedName, obras: editedObras })
       .then(response => {
         console.log('Dados atualizados:', response.data);
         setEditMode(null);
@@ -40,7 +40,7 @@ const ApiData = () => {
   };
 
   const handleDelete = (id) => {
-    axios.delete(`https://api.example.com/data/${id}`)
+    axios.delete(`http://localhost:3000/data/${id}`)
       .then(response => {
         console.log('Registro apagado:', id);
         fetchData();
