@@ -47,8 +47,8 @@ export default function ListEmprestimos() {
             {emprestimo.map(item => (
               <tr key={item.id}>
                 <td>{item.id}</td>
-                <td>{item.id_usuario}</td>
-                <td>{item.id_livro}</td>
+                <td>{item.username}</td>
+                <td>{item.titulo}</td>
                 <td>{item.id_situacao}</td>
                 <td>{item.dt_retirada}</td>
                 <td>{item.dt_devolucao_prevista}</td>

@@ -8,7 +8,8 @@ export default function CardEmprestimo({emprestimo}) {
 					<div className="w3-container w3-center">                       
                     <h5>{emprestimo.id}</h5>                    
                     <h5>{emprestimo.id_usuario}</h5>                    
-                    <h5>{emprestimo.id_livro}</h5>                    
+                    <h5>{emprestimo.username}</h5>
+                    <h5>{emprestimo.titulo}</h5>                    
                     <h5>{emprestimo.id_situacao}</h5>                    
                     <h5>{emprestimo.dt_retirada}</h5>                    
                     <h5>{emprestimo.dt_devolucao_prevista}</h5>                    
